@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens Dinâmica</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Galeria de Imagens Dinâmica</h1>
+            <p class="subtitle">As imagens da pasta são carregadas automaticamente.</p>
+            <div class="config-area">
+                <div class="config-option">
+                    <label for="interval-input">Tempo de troca (segundos):</label>
+                    <input type="number" id="interval-input" value="10" min="3" max="60">
+                </div>
+                <div class="config-option">
+                    <label for="transition-select">Efeito de Transição:</label>
+                    <select id="transition-select">
+                        <option value="slide" selected>Deslizar (Horizontal)</option>
+                        <option value="fade">Esmaecer (Fade)</option>
+                        <option value="slide-vertical">Deslizar (Vertical)</option>
+                        <option value="zoom">Zoom</option>
+                    </select>
+                </div>
+                <div class="config-option" style="grid-column: 1 / -1;">
+                    <label>Enviar Novas Imagens:</label>
+                    <button id="upload-btn">Selecionar e Enviar</button>
+                    <input type="file" id="file-input" multiple accept="image/*" style="display: none;">
+                    <p id="upload-status" style="margin-top: 10px;"></p>
+                </div>
+            </div>
+        </header>
+
+        <div class="slideshow-wrapper">
+            <div class="slideshow-container">
+                <div class="loading-message">Carregando imagens...</div>
+            </div>
+            <div class="info-panel">
+                <p>Imagem <span id="current-index">0</span> de <span id="total-count">0</span></p>
+                <p>Próxima troca em: <span id="countdown">10</span> segundos</p>
+                <div class="progress-bar">
+                    <div class="progress" id="progress-bar"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prev-btn">Anterior</button>
+            <button id="pause-btn">Pausar</button>
+            <button id="next-btn">Próxima</button>
+            <button id="shuffle-btn">Embaralhar</button>
+            <button id="fullscreen-btn">Tela Cheia</button>
+            <a href="gerenciar.html" class="button-link">Gerenciar Imagens</a>
+        </div>
+
+        <footer><p>Seu slideshow dinâmico. <a href="https://wpmasters.com.br" target="_blank">WPMasters</a></p></footer>
+    </div>
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>

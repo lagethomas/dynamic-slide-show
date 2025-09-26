@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Imagens da Galeria</title>
+    <link rel="stylesheet" href="assets/css/style-gerenciar.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gerenciar Imagens da Galeria</h1>
+            <p>Clique em uma imagem para deletá-la ou apague todas de uma vez.</p>
+            <div class="actions">
+                <a href="index.html" class="button-secondary">Voltar para o Slideshow</a>
+                <button id="delete-all-btn" class="button-danger">Apagar Todas as Imagens</button>
+            </div>
+        </header>
+
+        <main id="gallery-container">
+            <p class="loading-message">Carregando imagens...</p>
+        </main>
+
+        <footer>
+            <p>Gerenciador do Slideshow</p>
+        </footer>
+    </div>
+    <script src="assets/js/gerenciar.js" defer></script>
+</body>
+</html>
