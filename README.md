@@ -68,7 +68,8 @@ O projeto é organizado de forma modular para fácil manutenção:
 * **Backend:** PHP
 * 
  Administração dos slides
-<img width="1920" height="1080" alt="imagem1" src="https://github.com/user-attachments/assets/a1923e1b-c35c-4c54-aeaa-aee93c6507dc" />
+<img width="1644" height="919" alt="git1" src="https://github.com/user-attachments/assets/e827d44b-d248-4e05-9ae6-8e311a41804c" />
 
 Gerenciamento das imagens
-<img width="1920" height="1080" alt="imagem2" src="https://github.com/user-attachments/assets/28d4023b-f01e-4d5a-8ebd-49e3a785ede6" />
+<img width="1646" height="926" alt="git2" src="https://github.com/user-attachments/assets/58d944ac-3457-4c92-ae66-77454ecf68ab" />
+
