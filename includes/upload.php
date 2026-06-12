@@ -1,7 +1,11 @@
 <?php
-// --- MODIFICADO ---
-// Define o diretório de destino subindo um nível
-$uploadDir = '../imagens/';
+$area = isset($_POST['area']) ? basename($_POST['area']) : 'geral';
+
+$uploadDir = '../public/uploads/' . $area . '/';
+
+if (!is_dir($uploadDir)) {
+    mkdir($uploadDir, 0755, true);
+}
 
 $response = ['success' => false, 'message' => ''];
 
@@ -36,7 +40,7 @@ if (isset($_FILES['images'])) {
 
     if ($uploadedFiles > 0) {
         $response['success'] = true;
-        $response['message'] = "$uploadedFiles arquivo(s) enviados com sucesso!";
+        $response['message'] = "$uploadedFiles arquivo(s) enviados com sucesso para área '$area'!";
     } else {
         $response['message'] = 'Nenhum arquivo válido foi enviado. Erros: ' . implode(', ', $errors);
     }
